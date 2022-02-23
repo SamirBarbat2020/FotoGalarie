@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #007356;
+    font-family: 'Lobster Two', cursive;
+    
+}
+
+img{
+    object-fit: cover;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 10px 0 20px;
+}
+/* LEFT CONTAINER */
+.left-container{
+    max-height: 100vh;
+    width: 65%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.for-img-container{
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    height: 30%;
+    
+}
+
+.for-img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.three-img-container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+}
+
+.three-img-container img{
+    width: 100%;
+    height: 100%;   
+}
+
+/* LEFT CONTAINER END*/
+
+/* RIGHT CONTAINER */
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 32%;
+}
+
+.upper-container{
+    max-width: 100%;
+    height: 70%;
+}
+
+.upper-container img{
+    width: 100%;
+    height: 100%;
+    size: cover;
+}
+
+.upper-container img:hover {
+    transform: scaleX(-1);
+    
+  }
+
+.lower-container{
+    height: 30%;
+    background-color: #F7F5F4;
+    padding-left: 50px;
+}
+
+.lower-container div h1{
+   text-align: center;
+}
+
+.lower-container div p{
+    margin: 0 auto;
+ }
+
+/* RIGHT CONTAINER END*/
+
+
+/* ============dialog Beginn================== */
+
+.dialog-bg {
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog {
+   
+    height: 80%;
+    width: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba( 168, 201, 139, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.dialog-img-container{
+    width: 70%;
+}
+
+.dialog-img-container img{
+    width: 100%;
+    height: 70vh;
+    border-radius: 12px;
+}
+
+.left-arrow {
+    margin-right: 20px;
+}
+
+.left-arrow i{
+    color: #EB7E93;
+}
+
+.right-arrow{ 
+    margin-left: 20px;
+}
+
+.right-arrow i{
+    color: #EB7E93;
+   
+}
+
+.xmark{
+    height: 100%; margin-top: 5%; color: #eb6882;
+}
+
+.d-none {
+    display: none;
+}
+
+
+
+/* ----------RESPONSIVE------------- */
+
+
+@media(max-width: 750px){
+    .main-container{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        
+    }
+    
+    /* RIGHT CONTAINER */
+    
+    .right-container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: lightslategray;
+        width: 100%;
+    }
+    
+    .left-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .for-img-container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .three-img-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;   
+    }
+
+    /* RIGHT CONTAINER */
+
+    .lower-container{
+        height: 30%;
+        background-color: #edf1fa; 
+        padding: 0 10px;
+    }
+
+    .lower-container div h1{
+        text-align: center;
+     }
+     
+     .lower-container div{
+         margin: 0 auto;
+      }
+
+      /* DIALOG */
+      .dialog {
+        height: 50%;
+        width: 80%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background: rgba( 168, 201, 139, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+    .dialog-img-container{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .dialog-img-container img{
+        width: 100%;
+        height: 80%;
+        border-radius: 12px;
+    }
+
+    .xmark{
+        height: 100%; margin-top: 40%; color: #eb6882;
+    }
+      
+}
